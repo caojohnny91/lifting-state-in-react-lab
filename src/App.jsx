@@ -24,6 +24,10 @@ const App = () => {
 
   const [stack, newStack] = useState([]);
 
+  const addToBurger = (ingredient) => {
+    setStack([...stack, ingredient])
+  }
+
 
   return (
     <main>
