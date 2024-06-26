@@ -30,7 +30,7 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
         <IngredientList ingredients={availableIngredients}/>
-        <BurgerStack />
+        <BurgerStack ingredients={availableIngredients}/>
       </section>
     </main>
   );
