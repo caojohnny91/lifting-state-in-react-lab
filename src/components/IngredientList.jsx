@@ -1,11 +1,11 @@
 // src/components/IngredientList.jsx
-const IngredientList = (props) => {
+const IngredientList = ({ ingredients, addToBurger }) => {
   return (
     <ul>
-      {props.ingredients.map((ingredient, index) => (
+      {ingredients.map((ingredient, index) => (
         <li key={index} style={{ backgroundColor: ingredient.color }}>
           {ingredient.name}
-          <button onClick={() => props.addToBurger(ingredient)}>+</button>
+          <button onClick={() => addToBurger(ingredient)}>+</button>
         </li>
       ))}
     </ul>
