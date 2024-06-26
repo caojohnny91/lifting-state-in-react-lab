@@ -39,10 +39,7 @@ const App = () => {
           ingredients={availableIngredients}
           addToBurger={addToBurger}
         />
-        <BurgerStack
-          ingredients={stack}
-          removeFromBurger={removeFromBurger}
-        />
+        <BurgerStack ingredients={stack} removeFromBurger={removeFromBurger} />
       </section>
     </main>
   );
